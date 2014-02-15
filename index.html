@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta content="微信风、微信营销、微信代运营、微信定制开发、微信托管、微网站、微商城、微营销" name="Keywords">
+	    <meta content="微信风，国内最大的微信公众智能服务平台，微信风八大微体系：微菜单、微官网、微会员、微活动、微商城、微推送、微服务、微统计，企业微营销必备。" name="Description">
+	    <title>微信风（weixinfr）—国内最精确的微信公众服务平台</title>
+
+	    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	    <link rel="stylesheet" type="text/css" href="main.css" />
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+		
+		<script type="text/javascript" src="jquery.fullPage.js"></script>
+		<script type="text/javascript" src="babyzone.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var pepe = $.fn.fullpage({
+					slidesColor: ['white', '#686564', 'white', '#686564','white'],
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage'],
+					menu: '#menu',
+					slidesNavigation: true,
+					afterLoad: function(anchorLink, index){
+					
+					//section 3
+					if(anchorLink == '3rdPage'){
+						//moving the image
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+				}
+
+				});
+				
+			});
+			window.onload=function(){
+				//
+				babyzone.scroll(4,"banner_list","list","banner_info");
+			}
+		</script>
+		<style type="text/css">
+		#banner {
+			position:relative;height:70%;width: 100%; overflow:hidden; text-align:left !important; 
+			background-image:url(imgs/banner.jpg); padding: 0px !important; top: -7%;
+		 }
+		#banner_list a {}
+		#banner_list img {border:0px; height: 400px;}
+		/*#banner_bg {position:absolute; bottom:0;background-color:#000;height:30px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;cursor:pointer; }
+		#banner_info{position:absolute; bottom:0; left:5px; line-height:30px;color:#fff;z-index:1001}
+		#banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}*/
+		#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=75);opacity:0.75; 
+					z-index:1002;margin:0; padding:0; bottom:50px; right:50%;}
+		#banner ul li {margin:1px 2px;float:left;display:block;background-color:#6f4f67;
+						cursor:pointer; width: 10px; height: 10px;
+						-webkit-border-radius: 50%;-moz-border-radius: 50%;}
+		#banner ul li.on{ background-color:red}
+		#banner_list a{position:absolute;} <!-- 让四张图片都可以重叠在一起-->
+		</style>
+	</head>
+	<body>
+
+		<div id="nav-wrapper">
+			<ul id="menu">
+				<li data-menuanchor="firstPage"><a href="#firstPage">微信风</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage">功能介绍</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage">部分案例</a></li>
+				<li data-menuanchor="4thpage"><a href="#4thpage">关于我们</a></li>
+				<li data-menuanchor="5thpage"><a href="#5thpage">帮助中心</a></li>
+				<li data-menuanchor="6thpage"><a href="http://blog.weixinfr.com/">官方博客</a></li>
+			</ul>
+		</div>
+
+		<div class="section" id="section0">
+			<!--div>
+			    <div class="slide">
+					<div class="intro">
+						<h1>Create Sliders</h1>
+						<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+						<img src="imgs/slider.png" alt="slider" />
+					</div>
+					
+				</div>
+			    <div class="slide">
+					<div class="intro">
+						<img src="imgs/1.png" alt="simple" />
+						<h1>Simple</h1>
+						<p>Easy to use. Configurable and customizable.</p>
+					</div>
+				</div>
+			    <div class="slide">
+					<div class="intro">
+						<img src="imgs/2.png" alt="Cool" />
+						<h1>Cool</h1>
+						<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+					</div>
+				</div>
+			    <div class="slide">
+					<div class="intro">
+						<img src="imgs/3.png" alt="Compatible" />
+						<h1>Compatible</h1>
+						<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+					</div>
+				</div>
+			</div-->
+			<div id="banner">	
+				<div id="banner_bg"></div>  <!--标题背景-->
+				<a href="#" id="banner_info"></a> <!--标题-->
+			    <ul id="list"></ul>
+			    <div class="center">
+				   	<div id="banner_list">
+				        <a href="javascript: void(0)" target="_blank"><img src="imgs/banner-a.png"/></a>
+				        <a href="javascript: void(0)" target="_blank"><img src="imgs/banner-b.png"/></a>
+				        <a href="javascript: void(0)" target="_blank"><img src="imgs/banner-c.png"/></a>
+				        <a href="javascript: void(0)" target="_blank"><img src="imgs/banner-d.png"/></a>
+			    </div>
+				</div>
+
+				<div class="control-group" id="login-form">
+					<h4>登录微信风</h4>
+					<div class="controls">
+					    <div class="input-prepend">
+					    	<span class="add-on"><i class="icon-envelope"></i></span>
+					    	<input class="span2" id="u-email" type="text">
+					    </div>
+					</div>
+					<div class="input-prepend">
+					    <div class="controls">
+					    	<span class="add-on"><i class="icon-lock"></i></span>
+					    	<input class="span2" id="u-psw" type="text">
+					    </div>
+
+					</div>
+						
+						<a href="#"  style="display:block;position:relative; left:85px; color:white; opacity:0.">忘记登录密码</a>
+					
+					<div class="input-prepend">
+					    <div class="controls">
+					    	<span class="add-on"><i class="icon-pencil"></i></span>
+					    	<input class="span1" id="u-veri" type="text">
+					    </div>
+					</div>
+
+					<div class="control-group">
+					    <div class="controls">
+					    	<label class="checkbox">
+					    		<input type="checkbox">记住我
+					   		</label>
+					    	<button type="submit" class="" id="login-btn" >登  录</button>
+					    </div>
+					</div>
+
+					<a href="#" style="display:block;position:relative; left:100px; color:red">免费注册</a>
+				</div>	
+							
+			</div>
+
+		</div>
+
+		<div class="section " id="section1">
+		    <div class="slide">
+				<div class="intro">
+					<h1>Create Sliders</h1>
+					<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+					<img src="imgs/slider.png" alt="slider" />
+				</div>
+				
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img src="imgs/1.png" alt="simple" />
+					<h1>Simple</h1>
+					<p>Easy to use. Configurable and customizable.</p>
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img src="imgs/2.png" alt="Cool" />
+					<h1>Cool</h1>
+					<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img src="imgs/3.png" alt="Compatible" />
+					<h1>Compatible</h1>
+					<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Example</h1>
+				<p>HTML markup example to define 4 sections.</p>
+				<img src="imgs/example2.png" alt="example" />
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<!--div class="intro">
+				<h1>扫码体验公众帐号</h1>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信风是打造的一个专门针对微信公众账号提供营销推广服务的第三方平台。主要功能是针对微信商家公众号提供与众不同的、有针对性的营销推广服务。对微信营销实现有效监控，极大扩展潜在客户群和实现企业的运营目标。智能客服的可调教功能让用户真正从微信繁琐的日常客服工作中解脱出来，真正成为商家便利的新营销渠道。
+				</br></br>
+				</p>
+			</div>
+			<img src="imgs/qrcode2.jpg" alt="qrcode" /-->
+		    <div class="slide">
+				<div class="intro">
+					<h1>关于微信风</h1>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信风是打造的一个专门针对微信公众账号提供营销推广服务的第三方平台。主要功能是针对微信商家公众号提供与众不同的、有针对性的营销推广服务。对微信营销实现有效监控，极大扩展潜在客户群和实现企业的运营目标。智能客服的可调教功能让用户真正从微信繁琐的日常客服工作中解脱出来，真正成为商家便利的新营销渠道。
+					</br></br>
+					</p>
+				</div>
+			
+			</div>
+
+		    <div class="slide">
+				<div class="intro">
+					<img src="imgs/1.png" alt="Compatible" />
+					<h1>操作简洁</h1>
+					<p>微信风平台的管理界面简单易用、操作方便，大量人性化设计，一分钟开启微信营销，无需安装任何软件，全自动“云”平台，多账号管理，只需要简单的设置即可完成复杂的微信营销推广功能。</p>
+				</div>
+			</div>
+
+		    <div class="slide">
+				<div class="intro">
+					<!--img src="imgs/2.png" alt="Compatible" /-->
+					<h1>功能强大</h1>
+					<p>通过微信风平台，用户可以轻松管理自己的微信各类信息，对微信公众账号进行维护、开展智能机器人、在线发优惠劵、抽奖、刮奖、派发会员卡、打造微官网、开启微团购等多种活动，对微信营销实现有效监控，在线优惠劵、转盘抽奖、微信会员卡等推广服务更是让微信成为商家推广的利器，智能客服的可调教功能让用户真正从微信繁琐的日常客服工作中解脱出来，真正成为商家便利的新营销渠道，极大扩展潜在客户群和实现企业的运营目标。</p>
+				</div>
+			</div>
+
+		    <div class="slide">
+				<div class="intro">
+					<!--img src="imgs/3.png" alt="Compatible" /-->
+					<h1>专业团队</h1>
+					<p>一站式管理，平台支持，拥有多年网络营销经验的管理团队，强大的技术支持，专注于社会化媒体的研究，自有全国百万订阅量公众账号、全国主要城市区域号，以及微信电商团队实际操作，运营上海本地公众账号用户过万，熟练掌握获取本地用户的方法，不做整合营销，我们只专注于微信。</p>
+				</div>
+			</div>			
+			<div class="slide">
+				<div class="intro">
+					<h1>扫码体验公共帐号</h1>
+					<img src="imgs/qrcode2.jpg" alt="qrcode" />
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="intro">
+				<h1>Working On Tablets</h1>
+				<p>
+					Designed to fit to different screen sizes as well as tablet and mobile devices.
+					<br /><br /><br /><br /><br /><br />
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var bu = $.find('div.controlArrow.next');
+			//alert(bu);
+		</script>
+	</body>
+</html>

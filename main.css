@@ -1,0 +1,175 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;	
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	font-size: 1.2em;
+/*	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; */
+}
+#menu li.active{
+	color: red;
+	border-top: solid 2px red;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: red;
+}
+#menu li a:hover{
+	color: red;
+}
+#menu li a{
+	padding: 9px 18px;
+	display:block;
+	color: #000;
+}
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+	color: red;
+}
+#menu{
+	position:relative;
+	left:400px;
+}
+#nav-wrapper{
+	position:fixed;
+	height: 60px;
+	z-index: 60;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	background-color: #fff;
+	border-bottom: solid 1px #ececec;
+}
+#login-form{
+	text-align: left;
+	color: white;
+	position: absolute;
+	top: 70px;
+	right: 80px; 
+	z-index: 80;
+	display: block;
+	background-color: rgba(0,0,0,0.4); 
+	padding: 20px 35px;
+}
+#login-btn{
+	width: 167px;
+	height: 30px;
+	background-color: red;
+	color: white;
+	border: 0px;
+}
+.center{
+	position: relative;
+	margin: auto;
+	width: 960px;
+}
+#section0 img,
+#section1 img{
+	margin: 20px 0 0 0;
+}	
+#section1{
+	background-image: url(imgs/bg2.jpg);
+}
+#section2 img{
+	margin: 20px 0 0 52px;	
+}
+#section3{
+	color: white;
+	background-image: url(imgs/bg2.jpg);
+}
+#section3 h1{
+		color: red;
+		margin: 20px;
+}
+#section4 img{
+	bottom: 0px;
+	position:absolute;
+	margin-left: -420px;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+#section2 p{
+	visibility:hidden;
+}
+#section2 .intro{
+	left: -130%;
+	position:relative;
+}
